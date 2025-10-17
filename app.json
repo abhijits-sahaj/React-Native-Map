@@ -15,17 +15,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abhijits.reactnativemap",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "deploymentTarget": "15.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.abhijits.reactnativemap",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "platforms": ["ios", "android", "web"]
+    "platforms": ["ios", "android", "web"],
+    "plugins": [
+      "@react-native-firebase/app",
+      "expo-dev-client"
+    ]
   }
 }
